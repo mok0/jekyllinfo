@@ -100,25 +100,25 @@ permalink: jekyllinfo.html
 <h1>Pages</h1>
 
 <table class="table table-striped table-sm">
-    <thead>
-        <tr class="h">
-            <th>Title</th>
-            <th>Path</th>
-            <th>Date</th>
-            <th>Category</th>
-        </tr>
-    </thead>
-    <tbody
-{% for p in site.pages %}
-        <tr>
-            <td class="e">{{p.title}}</td>
-            <td class="v">{{p.path}}</td>
-            <td class="v">{{p.date|date: '%F'}}</td>
-            <td class="v">{{p.category}}</td>
-        </tr>
-{% endfor %}
+  <thead>
+     <tr class="h">
+        <th>Title</th>
+        <th>Path</th>
+        <th>Date</th>
+        <th>Category</th>
+     </tr>
+  </thead>
+  <tbody
+     {% for p in site.pages %}
+     <tr>
+        <td class="e">{{p.title}}</td>
+        <td class="v">{{p.path}}</td>
+        <td class="v">{{p.date|date: '%F'}}</td>
+        <td class="v">{{p.category}}</td>
+     </tr>
+     {% endfor %}
+   </tbody>
 </table>
-
 
 
 <h1>Collections</h1>
@@ -129,8 +129,8 @@ permalink: jekyllinfo.html
 <h2>{{c.label}}</h2>
 
 <table>
-    <tbody>
-        <tr>
+  <tbody>
+    <tr>
             <td class="e">Label</td><td class="v">{{c.label}}</td>
         </tr>
         <tr>
